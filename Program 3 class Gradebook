@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class GradeBook{
+	
+public:
+	GradeBook(string name) {
+		setCourseName(name);
+    }
+    void setCourseName(string name){
+    	courseName = name;
+	}
+	string getCourseName(){
+	    return courseName;
+	}
+	void displayMessage(){
+		cout<<"Welcome to grade book: "
+		    <<getCourseName()
+		    <<endl;
+	}
+private:
+	string courseName;
+};
+
+int main(){
+	GradeBook gradeBook1 ("CS101 intro to c++");
+	GradeBook gradeBook2 ("CS102 Data Structures in c++");
+	
+	cout<<"gradeBook1: "<<gradeBook1.getCourseName()
+	    <<"\ngradeBook2: "<<gradeBook2.getCourseName()
+	    <<endl;
+}
