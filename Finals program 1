@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main(){
+	int a;
+	int *aPtr;
+	
+	a=7;
+	aPtr =&a;
+	
+	cout<<"\nAddress of a: "<<&a
+	    <<"\nValue of aPtr: "<<aPtr;
+	cout<<"\nValue of a: "<<a
+	    <<"\nValue of *aPtr: "<<*aPtr;
+	cout<<"\n\nShowing that *and & are inverses of "
+	    <<"each other.\n&*aPtr: "<<&*aPtr 
+	    <<"\n*&aPtr = "<<*&aPtr<<endl;
+	    
+}
