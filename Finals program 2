@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+void cubeByReference(int *);
+
+int main(){
+	int number = 5;
+	cout<<'\nOriginal value of number:'<<number;
+	cubeByReference(&number);
+	cout<<"\nNew value of number: "<<number<<endl;
+}
+void cubeByReference(int*nPtr){
+	*nPtr= *nPtr * *nPtr * *nPtr;
+}
