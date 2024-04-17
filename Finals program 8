@@ -1,0 +1,8 @@
+#include <iostream>
+using namespace std;
+int main(){
+    double  array1[22];
+    
+    cout<<"\nVALUE: "<< sizeof array1 /sizeof(array1[0]);
+    
+}
